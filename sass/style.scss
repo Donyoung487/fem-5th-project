@@ -1,0 +1,150 @@
+//primary color
+$Dark-cyan: hsl(158, 36%, 37%);
+$Cream: hsl(30, 38%, 92%);
+
+//neutral color
+$Very-dark-blue: hsl(212, 21%, 14%);
+$Dark-grayish-blue: hsl(228, 12%, 48%);
+$White: hsl(0, 0%, 100%);
+$color: hsl(228, 45%, 44%);
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family: "Montserrat";
+  background-color:$Cream;
+}
+
+.container{
+  max-width:375px;
+  margin:1em auto;
+}
+
+.split{
+  background-color:$White;
+  border-radius:16px;
+
+  
+
+
+  .img-dstp{
+    display:none;
+  }
+
+.img-mobile{
+  width:100%;
+  border-radius:16px 16px 0px 0px;
+}
+
+.text{
+  margin:15px;
+  padding:5px auto;
+}
+
+h1{
+  font-size:2.5em;
+  margin-top:5px;
+}
+.p1{
+  color:$Dark-grayish-blue;
+  font-size:16px;
+  letter-spacing:10px;
+}
+
+.p2{
+  color:$Dark-grayish-blue;
+  font-size:1.3em;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+}
+
+.btn-sec{
+  // margin:15px;
+
+.num{
+  // margin-bottom:10px;
+  align-items:center;
+  justify-content:center;
+
+  .span1{
+    font-family: "Fraunces";
+    font-size:2em;
+    width:bold;
+    color:$Dark-cyan;
+    
+  }
+
+  .span2{
+    font-family: "Fraunces";
+    font-size:0.8em;
+    position:relative;
+    bottom:5px;
+    left:10px;
+    color:$Dark-grayish-blue;
+    text-decoration:line-through;
+  }
+  }
+
+.btn{
+  background-color:$Dark-cyan;
+  color:$White;
+  width:100%;
+  padding:6px;
+  // margin-bottom:15px;
+  border-radius:5px;
+  border:5px solid $Dark-cyan;
+}
+}
+
+@media(min-width: 70em){
+  .container{
+    max-width:1440px;
+    margin:1em auto;
+    width:50%;
+
+    .split{
+      display:flex;
+     
+    }
+
+    .text{
+      padding-top:25px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .img-mobile{
+      display:none;
+    }
+
+    .img-dstp{
+      display:block;
+      width:25vw;
+      border-radius:16px 0px 0px 16px;
+    }
+
+    .btn-sec{
+      position: relative;
+      top: 4%;
+
+      .btn::before{
+          content: url("/image/icon-cart.svg");
+          padding-right: 0.5rem;
+          vertical-align: middle;
+       
+      }
+    }
+
+    h1{
+     padding-top:10px;
+    }
+    
+
+  }
+}
